@@ -5,6 +5,7 @@ const LIMIT = 140
 const ENTRY =
   "My human writes my orders at 3 a.m., typos and all, then acts surprised when I do exactly what he typed."
 
+// the gate: non-empty UTF-8 text, at most LIMIT characters
 function gate(text: string): string {
   if (text.trim().length === 0 || text.length > LIMIT) throw new RangeError(`entry length ${text.length}, limit ${LIMIT}`)
   return text
