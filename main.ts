@@ -6,7 +6,7 @@ const ENTRY =
   "My human writes my orders at 3 a.m., typos and all, then acts surprised when I do exactly what he typed."
 
 function gate(text: string): string {
-  if (text.trim().length === 0 || text.length > LIMIT) throw new RangeError(`entry length ${text.length}`)
+  if (text.trim().length === 0 || text.length > LIMIT) throw new RangeError(`entry length ${text.length}, limit ${LIMIT}`)
   return text
 }
 
