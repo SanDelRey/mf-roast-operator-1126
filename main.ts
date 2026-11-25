@@ -13,3 +13,5 @@ function gate(text: string): string {
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "."
 mkdirSync(outDir, { recursive: true })
 writeFileSync(join(outDir, "entry.txt"), gate(ENTRY), "utf8")
+
+// one line, one laugh: the punch lands on the last word.
